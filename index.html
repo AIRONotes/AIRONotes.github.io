@@ -1,1 +1,33 @@
-Hello World
+---
+layout: default
+---
+
+<div class="home">
+
+ <p>Select by category</p>
+ {% for data_cat in site.data.categories %}
+	<span  style="background-color:{{data_cat.color}}">
+		<a href="/lectureNotes/blog/categories/{{data_cat.slug}}/" style="color: black">{{ data_cat.name }}</a>
+	</span>
+	&nbsp;
+ {% endfor %}
+
+	
+<!--
+  <h1>Posts</h1>
+-->
+</br></br>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" >{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+<!--
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+-->
+
+</div>
