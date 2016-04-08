@@ -4,7 +4,7 @@ email:
 description: "A place to collect and share our lecture's notes of the master in 'Artificial Intelligence and Robotics' at Sapienza University (Rome)."
 baseurl: ""
 url: ""
-github_username:  AIRONotes
+github_username: AIRONotes
 
 # Build settings
 markdown: kramdown

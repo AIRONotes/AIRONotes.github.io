@@ -15,7 +15,7 @@ layout: default
 			{% endfor %}
 			{% if cat %}
 				{% capture cats_content_temp %}{{ cats_content }}
-					<span  style="background-color:{{cat.color}}"><a href="/lectureNotes/blog/categories/{{ cat.slug }}/" style="color: black">{{ cat.name }}</a></span>
+					<span  style="background-color:{{cat.color}}"><a href="/blog/categories/{{ cat.slug }}/" style="color: black">{{ cat.name }}</a></span>
 					{% if forloop.last == false %}, {% endif %}{% endcapture %}
 				{% assign cats_content = cats_content_temp %}
 			{% endif %}
